@@ -8,4 +8,5 @@ git push -u origin master
 learn vim
 为什么不显示空格呢？
 
-需要打两个空格
+需要打两个空格  
+这样好像就可以换行了
