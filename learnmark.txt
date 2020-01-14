@@ -1,0 +1,50 @@
+ubuntu16.04安装git：sudo apt install git  
+一.设置用户名和邮箱：
+git config --global user.name "Name"
+git config --global user.email "email"
+二.如何创建本地仓库：
+创建一个本地git库:
+创建文件夹
+1. mkdir dir-name
+进入到文件目录
+
+2.cd dir-name
+初始化仓库
+
+3. git init
+
+
+4.如何看到隐藏的.git~~使用ls -ah
+
+三文件的增删改
+增加文件
+1.创建文件
+touch.name.**
+*****查看状态：git status*****
+2.将文件添加到暂存区：git add name.**
+3.将文件从暂存区提交到仓库：git commit -m ‘描述‘
+向仓库修改文件
+1.vim name.**修改文件内容
+2.将文件添加到暂存区：git add name.**
+3.将文件从暂存区提交到仓库：git commit -m ‘描述‘
+删除仓库文件
+1.rm -rf name.**
+2从git仓库中删除文件
+git rm name.**
+3提交操作
+git commit -m '提交的描述'
+四.git管理远程仓库
+1.git clone 仓库地址
+2.本地仓库与远程仓库关联
+git remote add origin git@server-name:path/repo-name.git
+第一种方式：git remote add origin https://github.com/zhanggong0564/learngit.git
+会要求输入用户名和密码
+第二种方式：git remote add origin https://zhanggong0564：********@github.com/zhanggong0564/learngit.git
+2.首次推送
+git push -u origin master
+3.后续推送 
+git push
+4.后续拉取
+git pull
+
+
